@@ -78,6 +78,8 @@ img {
     top:0;
     margin-left:-100px;}
 
+    
+
 .text{
     font-size: 40px;
     font-family: Tahoma, sans-serif;
@@ -307,7 +309,9 @@ img {
     border-radius:20px;
     color:#121E28;
     outline:solid;
-    outline-color:#2A3744;}
+    outline-width:2px;
+    outline-color:#2A3744;
+    background-color:#121E28;}
 
 .works-column{
     display:flex;
