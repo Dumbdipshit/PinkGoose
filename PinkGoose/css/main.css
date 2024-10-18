@@ -1,57 +1,59 @@
 body{
-    background-color:#10151A;}
+    background-color:#10151A;} /* Hier is het achtergronds kleur*/
+
+
+/*Ik gebruik CSS alleen voor classes en als ik iets moet animeren*/
 
 img {
     width: fit-content;
     height: fit-content;
-}
+    background-color: transparent;} /*hier heb ik attributes gezet voor alles fotos*/
+
+
+html{scroll-behavior:smooth;}   /*Ik heb het op smooth gezet want ik heb in mij website een pijltje gemaakt. als je erop klikt dan spring je naar beneden met een smooth transitie*/
 
 .verstopt{
-    color:#10151A;}
+    color:#10151A;} /*ik heb mijn naam ergens verstop met dezelfde achtergrond kleur*/
 
 .ready-project{
     color: white;
     font-size:35px;
-    font-family:Tahoma, sans-serif;
+    font-family:Tahoma, sans-serif; /*dit is een titel met een ander font size*/
     margin-left:-15px;
     text-align:center;}
+
 
 .pink{
     color: white;
     padding: 7px;}
-
-.goose{
+.goose{                 /* deze twee classes is voor de titel ik heb geen image gebruikt want ik wou laten zien dat ik dingen kan maken met CSS zonder fotos*/
     color: #FFB4D3;
     padding: 7px;}
+
 
 .title{
     display: flex;
     flex-direction: row;
     font-size: 30px;
-    font-family: Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif; /*Dit is de titel voor de Logo van de Header*/
     font-weight: bold;}
 
-.home{
-    color: white;
-    padding: 7px;}
-
-.learn{
-    color: white;
-    padding: 7px;}
-
-.about{
-    color: white;
-    padding: 7px;}
-
-.contact{
-    color: white;
-    padding: 7px;}
-
 .link{
+    color: white;
+    padding: 7px;
+    text-decoration:none;
+    transition:0.5s;}
+.link:hover{                 /*Dit is de class voor de links van de header*/
+    color:#FFB4D3;
+    font-size:18px;
+    padding-top:0px;
+    padding:10px;}
+
+.links{
     display: flex;
     flex-direction: row;
     font-size: 15px;
-    font-family: Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif; /*Dit is de container van de links van de header*/
     margin-top: 20px;}
 
 .login{
@@ -65,14 +67,21 @@ img {
     padding-top: 5px;
     font-family: Tahoma, sans-serif;
     font-weight: lighter;
-    margin-top: 25px;}
+    margin-top: 25px;
+    text-decoration: none;
+    transition:0.5s;}
+
+.login:hover{
+    color:#FF9E9E;
+    font-size:15px;}
+
 
 .header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #10151A;
-    box-shadow: 0px 10px 8px #10151A;
+    box-shadow: 0px 10px 8px #10151A;   /*Dit is de container van alles in de header*/
     z-index:1;
     position: sticky;
     top:0;
@@ -82,36 +91,39 @@ img {
 
 .text{
     font-size: 40px;
-    font-family: Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif;    /*dit is de titel van de eersde tekst* Ik kon een goeie naam bedenken*/
     color: white;
     margin-top: 100px;}
-
-.text1{
+.text2{ 
     font-size: 17px;
-    font-family: Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif;    /*dit is de tekst*/
     color: white;
     margin-top: 25px;}
 
-.text2{
-    font-size: 17px;
-    font-family: Tahoma, sans-serif;
-    color: white;
-    margin-top: 25px;}
+.container-text{
+    width:100%;
+    text-align: center;     /*dit is de container van die text*/
+    margin-left:0px;}
 
 .get-started{
     background-color: #CEAAFF;
     color: #10151A;
-    box-shadow: 0 10px 30px rgb(255, 184, 0, 0.208);
-    width: 141px;
+    box-shadow: 0 10px 30px rgb(255, 184, 0, 0.208);    /*dit is de get started knop*/
     font-family: Tahoma, sans-serif;
-    padding-left: 2px;
-    height: 35px;
-    padding-top: 15px;
-    border-radius: 7px;
-    margin-left: 520px;
-    margin-top: 50px;
     font-weight: bold;
-    text-align:center;}
+    text-decoration:none;
+    display:inline-block;
+    padding: 15px;
+    padding-left:40px;
+    padding-right:40px;
+    border-radius:12px;
+    margin-top:100px;
+    transition: 0.5s;}
+.get-started:hover{
+    padding:20px;
+    padding-left:48px;
+    padding-right:48px;
+    box-shadow: 0 10px 35px rgb(255, 184, 0, 0.208);}
 
 .pijlen{
     display: flex;
@@ -122,25 +134,26 @@ img {
     transform: rotateY(60deg);
     border-radius: 7px;
     padding-left: 25px;
-    margin: auto;}
-
-.pijl{
+    margin: auto;                   /*Dit is is de roze pijl ik kon fotos gebruiken maar ik wou mezelf uitdagen*/
+    text-decoration:none;
     font-size: 40px;
-    color:#F78787;
-    opacity:0.6;}
+    color:#F78787;}
+.pijlen:hover{
+    margin-top:10px;
+    margin-bottom:-10px;}
+.pijl{
+    opacity:0.5;}
 
-.solid{
-    opacity:1;}
 
 .photo-column{
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-content: center;    /*dit is de container van de foto op de eerste pagina*/
     margin-top:-100px;
     margin-bottom:100px;}
 
-.tags1{
+.tags1{                                    /*hier komr de gedeelte van de tags ik heb zoveel van gemaakt omdat ik toen niet wist dat i een spatie in de class kon zetten*/
     background-color:#182632;
     color:#FFB4D3;
     border-radius:50px;
@@ -151,7 +164,6 @@ img {
     padding-left:20px;
     padding-right:20px;
     margin: 5px;}
-
 .tags2{
     background-color:#182632;
     color:#FFC24C;
@@ -163,7 +175,6 @@ img {
     padding-left:20px;
     padding-right:20px;
     margin: 5px;}
-
 .tags3{
     background-color:#182632;
     color:#D387F7;
@@ -175,7 +186,6 @@ img {
     padding-left:20px;
     padding-right:20px;
     margin: 5px;}
-
 .tags4{
     background-color:#182632;
     color:#77E6FF;
@@ -187,7 +197,6 @@ img {
     padding-left:20px;
     padding-right:20px;
     margin: 5px;}
-
 .tags5{
     background-color:#182632;
     color:#23C9DE;
@@ -199,7 +208,6 @@ img {
     padding-left:20px;
     padding-right:20px;
     margin: 5px;}
-
 .tags6{
     background-color:#182632;
     color:#FF9E9E;
@@ -211,7 +219,6 @@ img {
     padding-left:20px;
     padding-right:20px;
     margin: 5px;}
-
 .tags7{
     background-color:#182632;
     color:#707F8D;
@@ -224,64 +231,57 @@ img {
     padding-right:20px;
     margin: 5px;}
 
-.container{
-    width:100%;
-    text-align: center;}
 
-.containerText{
-    width:100%;
-    text-align: center;
-    margin-left:0px;}
-
-
-.containerTags{
+.container-tags{
     width:auto;
-    text-align: center;
+    text-align: center;     /*dit is de container voor all die tags*/
     margin-top:50px;}
 
 
-.imageContainer{
+.image-container{
     margin-top:160px;
-    margin-left:-20px;}
+    margin-left:-20px;} /*dit is de positie van die code*/
 
 .image{
-    width:800px;
+    width:800px;        /* dit is de container van die image van de begin dit is gewoon de regels die de foto moest volgen*/
     height:325px;
     border-radius:30px;}
 
-.imageTag{
+.image-tag{
     color:#0A1117;
     background-color:#FFB4D3;
     font-weight:bold;
     margin-top:-23px;
     margin-left:415px;
     width:330px;
-    font-family: Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif;    /* dit is de tag van de foto*/
     border-radius:50px;
     padding-left:10px;
     padding-right:10px;
     padding:10px;}
 
-.longText{
+.long-text{
     color:#E5E5E5;
-    font-weight:bold;
+    font-weight:bold;       /*dit is niet een long text ik kon geen goeie naam vinden ik heb dit class meerdere keer gebruikt zoals voor titels die kleiner zijn dan de Titel class*/
     font-size:30px;
     font-family: Tahoma, sans-serif;
     text-align: center;
     margin-left:-5px;
     margin-top:0px;}
 
-.grayText{
-    color:#5A6C7E;}
 
-.pinkText{
+.gray-text{
+    color:#5A6C7E;      /*dit is de class voor teksten die grijs zijn*/
+    transition:0.5s;}
+.gray-text:hover{
     color:#FFB4D3;}
+
 
 .works{
     color:#E5E5E5;
     font-weight:bold;
     font-size:30px;
-    font-family: Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif;    /*ik verwacht niet dat iemand dit zal lezen ik heb al bewezen dat ik comments kan gebruiken*/
     text-align: center;
     margin-top:-50px;}
 
@@ -321,7 +321,12 @@ img {
 
 .works-name{
     color:white;
-    font-family:Tahoma, sans-serif;}
+    font-family:Tahoma, sans-serif;
+    text-decoration:none;
+    transition:0.5s;}
+
+.works-name:hover{
+    font-size:25px;}
 
 .yellow-text{
     color:#FFC803;}
@@ -399,9 +404,12 @@ img {
     width:100%;
     height:100px;}
 
-.profilePhoto{
-    height:40px;
-    width:40px;}
+.glow{
+    position: absolute;
+    z-index:-1;
+    margin-left:200px;
+    height:800px;
+    width:800px;}
 
 .info{
     justify-content:center;
@@ -410,44 +418,17 @@ img {
     font-size:25px;
     font-weight: bold;}
 
-
-    
-.ster1{
-    font-size:30px;
-    color:#4BE1F4;
-    margin-top:-5px;}
-
-.ster2{
-    font-size:30px;
-    color:#A36FFE;
-    margin-top:-5px;}
-
-.ster3{
-    font-size:30px;
-    color:#C8D316;
-    margin-top:-5px;}
-
-.ster4{
-    font-size:30px;
-    color:#FF8135;
-    margin-top:-5px;}
-
-.ster5{
-    font-size:30px;
-    color:#FFFBA8;
-    margin-top:-5px;}
-
 .row{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap:15px;}
 
-.profilePhoto{
+.profile-photo{
     width:90px;
     height:90px;}
 
-.rowGray{    
+.row-gray{    
     justify-content:center;
     text-align:center;
     font-family:Tahoma, sans-serif;
@@ -471,22 +452,39 @@ img {
     font-family:Tahoma, sans-serif;
     font-weight: bold;}
 
-.subscribe{
+.goose-post{
+    width:270px;
+    height:25px;}
+
+.your-message{
+    width:270px;
+    height:200px;
+    resize:none;}
+
+.submit{
     background-color:#CEAAFF;
     cursor: pointer;
     color:#10151A;
     outline-style: none;
     border-style: none;
     font-family:Tahoma, sans-serif;
-    height:25px;
-    padding:15px;
+    padding: 15px;
     padding-left:20px;
     padding-right:20px;
-    padding-bottom:30px;
     border-radius:11px;
-    font-weight: bold;}
+    font-weight: bold;
+    transition:0.5s;}
 
-.emailContainer{
+.submit:hover{
+    padding:20px;
+    padding-left:23px;
+    padding-right:23px;}
+
+.position-end{
+    align-self:flex-end;
+    margin-top:100px;}
+
+.email-container{
     background-color:#121E28;
     outline:solid;
     outline-color:#2A3744;
@@ -512,7 +510,7 @@ img {
   color:#3D4C5B;
   opacity: 1;}
 
-.pressContainer{
+.press-container{
     width:650px;
     height:200px;
     padding-top:25px;
@@ -522,25 +520,30 @@ img {
     flex-direction:column;
     gap:30px;}
 
-.pressText{
+.press-text{
     justify-content:space-between;
     flex-direction:row;
     display: flex;}
 
-.seeAll{
+.see-all{
     color:#8395A7;
     font-weight:bold;
     font-family:Tahoma, sans-serif;
-    align-self:flex-end;}
+    align-self:flex-end;
+    text-decoration:none;
+    transition:0.5s;}
+
+.see-all:hover{
+    font-size:18px;}
 
 
-.containerCompanies{
+.container-companies{
     display:flex;
     flex-direction:row;
     justify-content:space-between;}
 
 
-.decryptContainer{
+.decrypt-container{
     background-color:#77E6FF;
     color:#1D1D1B;
     width:29%;
@@ -551,29 +554,35 @@ img {
     justify-content:space-around;
     padding:10px;}
 
-.decryptLogo{
+.decrypt-logo{
     height:25px;
     width:75px;}
 
-.blackBoldText{
+.black-bold-text{
     font-weight:bold;
     font-family:Tahoma, sans-serif;
     color:#10151A;
     text-align: start;
-    font-size:12px;}
+    font-size:12px;
+    text-decoration:none;
+    transition:0.5s;}
 
-.blackLightText{
+.black-bold-text:hover{
+    font-size:13px;}
+
+.black-light-text{
     font-family:Tahoma, sans-serif;
     color:#10151A;
     text-align: start;
     font-weight: lighter;
-    font-size:10px;}
+    font-size:10px;
+    text-decoration:none;}
 
-.blockWorksLogo{
+.block-works-logo{
     height:25px;
     width:175px;}
 
-.blockWorksContainer{
+.block-works-container{
     background-color:#E2C1F9;
     color:#1D1D1B;
     width:29%;
@@ -584,11 +593,11 @@ img {
     justify-content:space-around;
     padding:10px;}
 
-.techCrunchLogo{
+.tech-crunch-logo{
     height:25px;
     width:175px;}
 
-.techCrunchContainer{
+.tech-crunch-container{
     background-color:#DBE268;
     color:#1D1D1B;
     width:29%;
@@ -599,21 +608,26 @@ img {
     justify-content:space-around;
     padding:10px;}
 
-.whiteBoldText{
+.white-bold-text{
     font-weight:bold;
     font-family:Tahoma, sans-serif;
     color:#ffff;
     text-align: start;
-    font-size:12px;}
+    font-size:12px;
+    text-decoration:none;
+    transition:0.5s;}
 
-.whiteLightText{
+.white-bold-text:hover{
+    font-size:13px;}
+
+.white-light-text{
     font-family:Tahoma, sans-serif;
     color:#E2E2E2;
     text-align: start;
     font-weight: lighter;
     font-size:10px;}
 
-.podcastContainer{
+.podcast-container{
     width:650px;
     height:200px;
     padding-top:25px;
@@ -623,12 +637,12 @@ img {
     flex-direction:column;
     gap:30px;}
 
-.podcastText{
+.podcast-text{
     justify-content:space-between;
     flex-direction:row;
     display: flex;}
 
-.placeholderPodcastContainer{
+.placeholder-podcast-container{
     background-color:#121E28;
     outline:solid;
     outline-color:#2A3744;
@@ -640,16 +654,16 @@ img {
     justify-content:space-around;
     padding:10px;}
 
-.photoPodcast{
+.photo-podcast{
     height:30px;
     width:30px;}
 
-.containPodcast{
+.contain-podcast{
     display:flex;
     flex-direction:row;
     justify-content:space-between;}
 
-.largeGray{
+.large-gray{
     color:#5A6C7E;
     font-size:30px;
     text-align:center;
@@ -675,7 +689,13 @@ img {
     justify-content:space-around;
     padding-top:8px;
     padding-left:4px;
-    padding-right:20px;}
+    padding-right:20px;
+    transition:0.5s;}
+
+.telegram-container:hover{
+
+    height:55px;
+    width:220px;}
 
 .telegram-text{
     color:#4D3705;
@@ -722,7 +742,12 @@ img {
     justify-content:space-around;
     padding-top:8px;
     padding-left:4px;
-    padding-right:20px;}
+    padding-right:20px;
+    transition: 0.5s;;}
+
+.super-email-container:hover{
+    height:55px;
+    width:220px;}
 
 .super-email-text{
     color:#40354B;
@@ -749,7 +774,12 @@ img {
 
 .social-image{
     height:45px;
-    width:45px;}
+    width:45px;
+    transition:0.5s;}
+
+.social-image:hover{
+    height:55px;
+    width:55px;}
 
 .footer-container{
     margin-left:-10px;
@@ -772,6 +802,123 @@ img {
     flex-direction:column;
     justify-content:flex-start;
     gap:100px;}
+
+.star1{
+    margin-left:250px;
+    margin-bottom:-50px;}
+
+.star2{
+    margin-left:900px;
+    margin-top:-100px;
+    margin-bottom:-100px;}
+
+.star3{
+    margin-left:350px;
+    margin-bottom:50px;
+    margin-top:-120px;}
+
+.mirrored-star3{
+    margin-top:50px;
+    margin-bottom:-50px;
+    margin-left:-100px;
+    transform:scaleX(-1);}
+
+.star4{
+    margin-top:-120px;}
+
+.star5{
+    margin:auto;
+    margin-top:150px;}
+
+.star{
+    height:25px;
+    width:25px;
+    margin-top:5px;}
+
+.second-star2{
+    margin-top:-20px;
+    margin-bottom:-40px;
+    margin-left:100px;}
+
+.star-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    gap:300px;}
+
+.contact-arrow{
+    text-align: end;
+    font-weight: bold;
+    color:#10151A;
+    font-family:Tahoma, sans-serif;
+    font-size:12px;
+    text-decoration:none;
+    transition:0.5s;}
+
+.contact-arrow:hover{
+    font-size:13px;}
+
+
+.hero{
+    background-color:#FFB4D3;
+    width:200px;
+    height:180px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    padding:10px;
+    border-radius:12px;}
+
+.our-hero-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:30px;}
+
+.our-herous{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:25px;
+    margin-top:100px;
+    margin-bottom:50px;}
+
+.hero-align{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-content:center;}
+
+.send-a-goose-post{
+    display:flex;
+    flex-direction:column;
+    background-color:#121E28;
+    border-radius:12px;
+    outline-style:solid;
+    outline-width:2px;
+    outline-color:#2A3744;
+    align-self:center;
+    width:40%;
+    gap:20px;
+    align-items:center;
+    padding: 30px;
+    padding-bottom:30px;}
+
+.select{
+    width:300px;
+    height:40px;
+    background-color:#121E28;
+    color:#3D4C5B;
+    border-style:solid;
+    border-color:#2A3744;
+    border-width:1px;
+    outline-color:#2A3744;
+    outline-style:solid;
+    outline-width:1px;
+    border-radius:6px;
+    padding:10px;}
+
+
 
 
 
