@@ -2,6 +2,7 @@ body{
     background-color:#10151A;} /* Hier is het achtergronds kleur*/
 
 
+
 /*Ik gebruik CSS alleen voor classes en als ik iets moet animeren*/
 
 img {
@@ -25,10 +26,13 @@ html{scroll-behavior:smooth;}   /*Ik heb het op smooth gezet want ik heb in mij 
 
 .pink{
     color: white;
-    padding: 7px;}
+    font-size:30px;
+    padding-top: 0px;}
 .goose{                 /* deze twee classes is voor de titel ik heb geen image gebruikt want ik wou laten zien dat ik dingen kan maken met CSS zonder fotos*/
     color: #FFB4D3;
-    padding: 7px;}
+    font-size:30px;
+    padding-left: 10px;
+    padding-top:0px;}
 
 
 .title{
@@ -55,6 +59,7 @@ html{scroll-behavior:smooth;}   /*Ik heb het op smooth gezet want ik heb in mij 
     font-size: 15px;
     font-family: Tahoma, sans-serif; /*Dit is de container van de links van de header*/
     margin-top: 20px;}
+    
 
 .login{
     color: white;
@@ -677,7 +682,8 @@ html{scroll-behavior:smooth;}   /*Ik heb het op smooth gezet want ik heb in mij 
     padding:10px;
     padding-left:8px;
     padding-top:8px;
-    border-radius:12px;}
+    border-radius:12px;
+    margin-left:10px;}
 
 .telegram-container{
     background-color:#FFC803;
@@ -686,7 +692,8 @@ html{scroll-behavior:smooth;}   /*Ik heb het op smooth gezet want ik heb in mij 
     border-radius:12px;
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:start;
+    gap:10px;
     padding-top:8px;
     padding-left:4px;
     padding-right:20px;
@@ -730,7 +737,8 @@ html{scroll-behavior:smooth;}   /*Ik heb het op smooth gezet want ik heb in mij 
     padding:10px;
     padding-left:8px;
     padding-top:8px;
-    border-radius:12px;}
+    border-radius:12px;
+    margin-left:10px;}
 
 .super-email-container{
     background-color:#E2C1F9;
@@ -739,7 +747,8 @@ html{scroll-behavior:smooth;}   /*Ik heb het op smooth gezet want ik heb in mij 
     border-radius:12px;
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:start;
+    gap:10px;
     padding-top:8px;
     padding-left:4px;
     padding-right:20px;
@@ -753,10 +762,12 @@ html{scroll-behavior:smooth;}   /*Ik heb het op smooth gezet want ik heb in mij 
     color:#40354B;
     font-family:Tahoma, sans-serif;
     font-weight:bold;
-    text-align:start;}
+    text-align:start;
+    font-size: 16px;}
 
 .light{
-    font-weight:lighter;}
+    font-weight:lighter;
+    font-size:12px;}
 
 .super-email-text-container{
     display:flex;
@@ -853,7 +864,8 @@ html{scroll-behavior:smooth;}   /*Ik heb het op smooth gezet want ik heb in mij 
     font-family:Tahoma, sans-serif;
     font-size:12px;
     text-decoration:none;
-    transition:0.5s;}
+    transition:0.5s;
+    padding-bottom:20px;}
 
 .contact-arrow:hover{
     font-size:13px;}
@@ -865,7 +877,7 @@ html{scroll-behavior:smooth;}   /*Ik heb het op smooth gezet want ik heb in mij 
     height:180px;
     display:flex;
     flex-direction:column;
-    gap:15px;
+    gap:10px;
     padding:10px;
     border-radius:12px;}
 
